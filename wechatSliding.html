@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wechat Sliding</title>
+    <style>
+        ul, li, body{
+            margin: 0;
+            padding :0;
+        }
+        ul, li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .clearfix{
+            *zoom: 1;
+        }
+        .headerbg{
+           background: url(./img/headerBg.jpg) repeat-x;
+           height: 74px;
+        }
+        .container{
+            width: 966px;
+            margin: 0 auto;
+        }
+        .logo{
+            margin-top: 14px;
+        }
+        .logo > img{
+            width: 130px;
+            height: 44px;
+        }
+        .topnav{
+            padding-top: 21px;
+        }
+        .topnav li{
+            float: left;
+            height: 33px;
+            line-height: 33px;
+            margin-left: 4px;
+        }
+        .topnav li a{
+            display: block;
+            padding-left: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+        .topnav .active a{
+            font-weight: bold;
+        }
+        .topnav li a span{
+            display: block;
+            padding-right: 11px;
+            
+        }
+        .topnav li a:hover, 
+        .topnav .active a{
+            background:url('./img/weixiBg.png') no-repeat left center;
+        }
+        .topnav li a:hover span, 
+        .topnav .active a span{
+            background:url('./img/weixiBg.png') no-repeat right center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        微信滑动门技术
+
+            为了使各种【特殊形状的背景】能够【自适应元素中文本内容的多少】，出现了CSS滑动门技术。它从新的角度构建页面，使各种特殊形状的背景能够自由拉伸滑动，以适应元素内部的文本内容，可用性更强。 最常见于各种导航栏的滑动门。如微信官网导航。
+
+            滑动门核心技术就是【利用CSS精灵（主要是背景位置）和盒子padding撑开宽度】, 以便能适应不同字数的导航栏。
+
+     -->
+     <!-- 1.布局 -->
+     <div class="headerbg">
+         <div class="container clearfix">
+             <a href="#" class = "logo fl">
+                <img src="./img/weixinLogo.png" alt="">
+             </a>
+             <ul class="topnav fr">
+                 <li class="active">
+                     <a href="#">
+                        <span>首页</span>
+                     </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>帮助与反馈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>公众平台</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>开放平台</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>微信支付</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>微信广告</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>企业微信</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>表情开放平台</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>微信网页版</span>
+                    </a>
+                </li>
+             </ul>
+         </div>
+     </div>
+</body>
+</html>
