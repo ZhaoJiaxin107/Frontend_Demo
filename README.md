@@ -25,5 +25,5 @@ Interesting cases of frontend development
 - style.left should be defined in advance otherwise the value is null.
 
 ### Important
-How to make the magnifying glass on the small picture move synchronously with the large picture
+How to make the magnifying glass on the small picture move synchronously with the large picture.
 
